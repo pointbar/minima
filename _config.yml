@@ -53,3 +53,10 @@ defaults:
       type: pages
     values:
       layout: page
+  -    
+    scope:
+      path: 
+      type: pages
+    values:
+      layout: categorie
+      author: "Mr. Hyde"
