@@ -7,28 +7,37 @@ layout: default
     {% if page.description %}
     <p>par {{ page.author }}</p>
     {% endif %}
-    metas: {{ page.metas }}
     <ul class="list-meta">
       {% if page.description %}
       <li>
          <span class="field">description</span> : {{ page.description}} pour {{ page.nombre }}
       </li>
       {% endif %}
+      {% if page.url %}
       <li>
-        <span class="field">catégorie</span> : [{{ page.categorie }}]({{ page.url | relative_url }})
+        <span class="field">catégorie</span> : <a href={{ page.url | relative_url }}>{{ page.categorie }}</a>
       </li>
+      {% endif %}
+      {% if page.niveau %}
       <li>
         <span class="field">niveau de difficulté</span> : {{ page.niveau }}
       </li>
+      {% endif %}
+      {% if page.licence %}
       <li>
         <span class="field">licence de réutilisation</span> : {{ page.licence }}
       </li>
+      {% endif %}
+      {% if page.temps-preparation %}
       <li>
         <span class="field">temps de préparation</span> : {{ page.temps-preparation }}
       </li>
+      {% endif %}
+      {% if page.temps-cuisson %}
       <li>
         <span class="field">temps de cuisson</span> : {{ page.temps-cuisson }}
       </li>
+      {% endif %}
     </ul>
   </header>
 
