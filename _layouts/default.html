@@ -14,12 +14,12 @@
         {% else %}
           {% assign sorted-pages = site.html_pages | sort: 'title' %}
           {% for page in sorted-pages %}
-            {% unless page.page-type %}
+            {% if page.page-type != "" and page.url != "/" %}
             <article class="summary">
               <h3><a href="{{ page.url | relative_url }}">{{ page.title }}</a></h3>
               <p>{{ page.description }}</p>
             </article>
-            {% endunless %}
+            {% endif %}
           {% endfor %}
         {% endif %}
       </div>
