@@ -9,10 +9,10 @@
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        page_url {{ page.url }}
-        site.pages.path {{ site.pages.path }}
-        site.header_pages {{ site.header_pages }}
+        {% if page.url != "/" %}
         {{ content }}
+        {% endif %}
+        README
       </div>
     </main>
 
