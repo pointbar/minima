@@ -13,7 +13,7 @@ layout: default
          <span class="field">description</span> : {{ page.description}} pour {{ page.nombre }}
       </li>
       {% endif %}
-      {% if page.url %}
+      {% if page.categorie %}
       <li>
         <span class="field">catégorie</span> : <a href={{ page.url | relative_url }}>{{ page.categorie }}</a>
       </li>
