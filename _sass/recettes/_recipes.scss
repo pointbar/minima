@@ -1,3 +1,7 @@
-body {
-  background: red;
+.page-content ul.list-meta {
+  list-style-type: none;
+}
+
+.page-content ul.list-meta li span.field {
+  font-weight: bold;
 }
