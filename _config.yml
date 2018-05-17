@@ -10,14 +10,11 @@ description: > # this means to ignore newlines until "twitter_username:"
 twitter_username: jekyllrb
 github_username:  jekyll
 rss: rss
-# dribbble_username: jekyll
 # facebook_username: jekyll
 # flickr_username: jekyll
 # instagram_username: jekyll
-# linkedin_username: jekyll
 # pinterest_username: jekyll
 # youtube_username: jekyll
-# googleplus_username: +jekyll
 
 # Mastodon instances
 # mastodon:
@@ -41,10 +38,6 @@ minima:
 
 # Build settings
 theme: minima
-
-plugins:
- - jekyll-feed
- - jekyll-seo-tag
 
 defaults:
   -

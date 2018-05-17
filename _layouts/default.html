@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="{{ page.lang | default: site.lang | default: "fr" }}">
 
   {%- include head.html -%}
 
@@ -9,6 +9,9 @@
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
+        page_url {{ page.url }}
+        site.pages.path {{ site.pages.path }}
+        site.header_pages {{ site.header_pages }}
         {{ content }}
       </div>
     </main>
